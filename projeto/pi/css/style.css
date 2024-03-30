@@ -1,0 +1,255 @@
+/*geral*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+a:hover{
+    background-color: #4d46b356;
+    border-radius: 10px;
+}
+
+a:not(:hover){
+    border-radius: 10px;
+}
+
+a:active{
+    color: black;
+    background-color: #4D46B3;
+    border-radius: 0;
+}
+
+.dropdown-item:active{
+    background-color: #4D46B3;
+}
+
+li {
+    text-decoration: none;
+    color: black;
+}
+/*index*/
+
+.img-logo0 {
+    border-radius: 111111px;
+}
+
+.texto-0 {
+    font-size: 14px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    text-align: center;
+    line-height: 60px; /* Centraliza verticalmente o conteúdo do footer */
+}
+
+/*Animações*/
+@keyframes vento {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+  
+.sopro-vento {
+    animation: vento 0.5s ease-in-out;
+}
+
+.img-minimalista {
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Adiciona sombra branca suave */
+  }
+  
+  
+/*--
+pagina contato
+--*/
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #4D46B3;
+  color: white;
+  text-align: center;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.developer {
+  text-align: center;
+}
+
+.developer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.developer h5 {
+  margin-bottom: 5px;
+}
+
+.developer p {
+  color: #6c757d;
+}
+
+/*tela login*/
+body.body-login {
+  /* Define a imagem de fundo */
+  background-image: url('../imgs/fundo-login.jpg');
+
+  /* Garante que a imagem de fundo cubra toda a tela */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Mantém o conteúdo da página fixo */
+  background-attachment: fixed;
+}
+
+.box-login{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #4d46b386;
+  margin-left: 200px;
+  top: 120px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* sombra da caixa */
+  color: white;
+  padding: 24px;
+}
+
+.formulario-login{
+  margin: 10px;
+  padding: 1px;
+}
+
+.logo-box-login{
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin: 10px;
+}
+
+.forms-login{
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.input-login{
+  padding: 1px;
+  margin: 0 0 0 12px;
+  width: 80%;
+}
+
+.text-reset-pass{
+  font-size: 14px;
+  margin-left: 2px;
+  padding: 12px;
+  color: white;
+}
+/*verificar problema com o hover e o espaço da box em links*/
+
+.a-reset-pass:hover{
+  background-color: none;
+  padding: 0;
+  margin: 0;
+}
+
+.botao-login{
+  margin: 10px;
+  padding: 1px;
+  width: 80px;
+  color: #4D46B3;
+  font-weight: 700;
+}
+
+.text-registrar{
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+.cor-register{
+  color: #4D46B3 !important;
+}
+
+/*página registro*/
+body.body-registro {
+  /* Define a imagem de fundo */
+  background-image: url('../imgs/tela-registro.jpg');
+
+  /* Garante que a imagem de fundo cubra toda a tela */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Mantém o conteúdo da página fixo */
+  background-attachment: fixed;
+}
+
+.box-registrar{
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: #4d46b386;
+  margin-left: 200px;
+  top: 120px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* sombra da caixa */
+  color: white;
+  padding: 24px;
+}
+
+/*página download*/
+.pasta-download{
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* sombra da caixa */
+}
