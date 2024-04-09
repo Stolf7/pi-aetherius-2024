@@ -11,8 +11,7 @@ function conectarBanco() {
         $conexao = new PDO("mysql:host=$host;dbname=$dbname", $usuario, $senha);
         // Define o modo de erro do PDO como exceção
         $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return 'sucesso';
-        
+        return $conexao;
     } catch(PDOException $e) {
         // Em caso de erro na conexão, exibe o erro
         echo 'Erro na conexão com o banco de dados: ' . $e->getMessage();

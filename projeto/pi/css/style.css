@@ -8,10 +8,13 @@ a {
     text-decoration: none !important;
     color: black !important;
 }
-
 a:hover{
-    background-color: #4d46b356;
+    background-color: none !important;
     border-radius: 10px;
+}
+
+.a-logo:hover{
+  background-color: #4d46b356;
 }
 
 a:not(:hover){
@@ -29,13 +32,37 @@ a:active{
 }
 
 li {
+  list-style: none;
     text-decoration: none;
     color: black;
 }
+
+/*header*/
+
+
+
 /*index*/
+
+.fundo-nav{
+  background-color: #212121;
+}
+
+.index-logo{
+  margin: auto;
+}
 
 .img-logo0 {
     border-radius: 111111px;
+}
+
+.img-logo1{
+    border-radius: 111111px;
+    filter: grayscale(100%) brightness(10000%); /* Remove toda a cor e ajusta o brilho */
+}
+
+.img-logo2 {
+  border-radius: 111111px;
+  filter: brightness(0%); /* Ajusta o brilho ao mínimo */
 }
 
 .texto-0 {
@@ -47,9 +74,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: #f8f9fa; /* Cor de fundo do footer */
     text-align: center;
-    line-height: 60px; /* Centraliza verticalmente o conteúdo do footer */
 }
 
 /*Animações*/
@@ -68,13 +93,18 @@ footer {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Adiciona sombra branca suave */
   }
   
-  
+.container-documentacao{
+  background-color: #212121;
+  width: 100%;
+  height: 370px;
+}
+
+
 /*--
 pagina contato
 --*/
-body {
-  background-color: #f8f9fa;
-  color: #343a40;
+.bg-card{
+  background-color: #212121 !important;
 }
 
 .container {
@@ -252,4 +282,37 @@ body.body-registro {
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* sombra da caixa */
+}
+
+/*documentacao*/
+.conteudo-documentacao {
+  margin-top: 30px; /* Espaçamento superior */
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.subtitulo-documentacao {
+  color: #343a40; /* Cor do subtitulo */
+}
+
+.paragrafo-documentacao {
+  color: #333; /* Cor do parágrafo */
+}
+
+.lista-instalacao, .lista-contribuicao {
+  list-style-type: none; /* Remover marcadores da lista */
+  padding-left: 0; /* Remover espaçamento à esquerda da lista */
+}
+
+.item-lista {
+  padding: 10px; /* Espaçamento interno do item da lista */
+  border-bottom: 1px solid #ccc; /* Adicionar linha de divisão entre os itens */
+}
+
+.item-lista:last-child {
+  border-bottom: none; /* Remover borda inferior do último item */
+}
+
+.codigo-destaque {
+  background-color: #f8f9fa; /* Cor de fundo para destacar código */
+  padding: 10px; /* Espaçamento interno */
 }

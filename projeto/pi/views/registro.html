@@ -55,15 +55,17 @@
       <div class="logo-box-login"><img class="img-logo0" src="../imgs/logo.svg" width="48" height="48" alt="" srcset=""></div>
 
       <div class="forms-login">
-        <label class="formulario-login" for="email">E-mail</label>
-        <input class="input-login" type="text" name="email" id="email">
-        <label class="formulario-login" for="aniversario">Data de nascimento</label>
-        <input class="input-login" type="date" name="aniversario" id="aniversario">
-        <label class="formulario-login" for="senha">Senha</label>
-        <input class="input-login" type="password" name="senha" id="senha">
-        <label class="formulario-login" for="senha">Confirme a senha</label>
-        <input class="input-login" type="password" name="senha" id="senha">
-        <button class="botao-login" type="button">Registrar</button> 
+        <form action="../php/registrar.php" method="post">
+          <label class="formulario-login" for="email">E-mail</label>
+          <input class="input-login" type="text" name="email" id="email">
+          <label class="formulario-login" for="aniversario">Data de nascimento</label>
+          <input class="input-login" type="date" name="aniversario" id="aniversario">
+          <label class="formulario-login" for="senha">Senha</label>
+          <input class="input-login" type="password" name="senha" id="senha">
+          <label class="formulario-login" for="senha">Confirme a senha</label>
+          <input class="input-login" type="password" name="senha" id="senha">
+          <button class="botao-login" type="submit">Registrar</button>
+        </form>
       </div>
     </div>
   </main>

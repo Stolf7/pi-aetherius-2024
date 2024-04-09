@@ -1,0 +1,27 @@
+Estamos entusiasmados em apresentar nosso projeto, que visa coletar dados utilizando Arduino com shields de monitoramento do ar, e aplicar inteligência artificial, em específico, o Python com a biblioteca sklearn.linear_mode. O objetivo é prever chances de acidentes, oferecendo uma solução completa de monitoramento e alerta em tempo real para ambientes industriais.
+
+Nossa solução não só coleta dados essenciais para a previsão de acidentes, mas também os analisa utilizando algoritmos de IA, permitindo-nos identificar padrões e sinais de alerta precoce. A aplicação web resultante oferece uma interface amigável para monitoramento contínuo e a geração de alertas imediatos em caso de risco iminente.
+
+Uma característica fundamental do nosso projeto é a sua natureza open source. Acreditamos na colaboração e na transparência, permitindo que outros contribuam para o desenvolvimento e melhoria contínua da solução. Além disso, nossa solução é altamente flexível e escalável, adaptando-se facilmente a diferentes ambientes e requisitos de uso. Podendo ser instalada até mesmo localmente em um servidor.
+
+Em resumo, nosso projeto oferece uma abordagem inovadora para prevenção de acidentes, utilizando tecnologia de ponta e uma abordagem colaborativa e transparente. Estamos confiantes de que nossa solução fará a diferença e aguardamos ansiosamente para compartilhá-la com vocês.
+
+Vamos explicar como nosso sistema funciona e como configurá-lo:
+
+    Download e Hospedagem da Aplicação:
+    Primeiro, a solução pode ser baixada diretamente do nosso site como um arquivo ZIP. Após o download, é necessário extrair o conteúdo e hospedá-lo em um servidor local que suporte serviços como HTML, PHP e Python.
+
+    Configuração do Ambiente de Testes:
+    Para ambientes de testes, recomendamos a utilização de uma configuração como Ubuntu Server com XAMPP instalado. Isso fornece um ambiente de desenvolvimento local completo para executar e testar a aplicação.
+
+    Configuração do Arduino:
+    Com o Arduino em mãos, instale-o em uma localização com acesso à internet, seja por conexão cabeada ou sem fio. Certifique-se de que ele esteja na mesma faixa de IP que o servidor web. Por exemplo, se o servidor tiver o endereço IP 192.168.0.90, o Arduino deve ter o endereço IP 192.168.0.91.
+
+    Coleta de Dados e Comunicação com a Aplicação:
+    O Arduino é responsável pela coleta de dados ambientais e envio desses dados para a aplicação no servidor via protocolo POST. A aplicação então analisa essas informações usando algoritmos de inteligência artificial e as exibe em dashboards informativos.
+
+    Alertas em Caso de Risco:
+    Se o sistema identificar algum risco potencial ao ambiente, a aplicação enviará alertas por meio de uma determinada mídia, informando sobre a situação. Esses alertas devem ser prontamente atendidos pelo pessoal responsável pela segurança.
+
+Essa é a estrutura básica de como nosso sistema opera. Ele fornece uma solução abrangente para monitoramento ambiental, com capacidade de detecção e resposta a situações de risco em tempo real.
+
